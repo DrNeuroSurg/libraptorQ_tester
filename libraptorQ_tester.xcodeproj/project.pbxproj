@@ -8,23 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		492F092F1CD4C57F00258959 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 492F092E1CD4C57F00258959 /* main.cpp */; };
+		492F09461CD4C8B400258959 /* libRaptorQ.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 492F09451CD4C8B400258959 /* libRaptorQ.dylib */; };
+		492F094C1CD4CA1200258959 /* libRaptorQ.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 492F09451CD4C8B400258959 /* libRaptorQ.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		492F09291CD4C57F00258959 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		492F094B1CD4CA0100258959 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				492F094C1CD4CA1200258959 /* libRaptorQ.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		492DEF401CD5D9BD0014BB30 /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 		492F092B1CD4C57F00258959 /* libraptorQ_tester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libraptorQ_tester; sourceTree = BUILT_PRODUCTS_DIR; };
-		492F092E1CD4C57F00258959 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		492F092E1CD4C57F00258959 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; usesTabs = 0; };
+		492F09451CD4C8B400258959 /* libRaptorQ.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libRaptorQ.dylib; sourceTree = "<group>"; };
+		494B5D741CD8DAD500503461 /* common.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
+		494B5D751CD8DAD500503461 /* cRaptorQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cRaptorQ.h; sourceTree = "<group>"; };
+		494B5D761CD8DAD500503461 /* De_Interleaver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = De_Interleaver.hpp; sourceTree = "<group>"; };
+		494B5D771CD8DAD500503461 /* Decoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Decoder.hpp; sourceTree = "<group>"; };
+		494B5D781CD8DAD500503461 /* degree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = degree.hpp; sourceTree = "<group>"; };
+		494B5D791CD8DAD500503461 /* Encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Encoder.hpp; sourceTree = "<group>"; };
+		494B5D7A1CD8DAD500503461 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
+		494B5D7B1CD8DAD500503461 /* Interleaver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Interleaver.hpp; sourceTree = "<group>"; };
+		494B5D7C1CD8DAD500503461 /* multiplication.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = multiplication.hpp; sourceTree = "<group>"; };
+		494B5D7D1CD8DAD500503461 /* Parameters.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Parameters.hpp; sourceTree = "<group>"; };
+		494B5D7E1CD8DAD500503461 /* Phase2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Phase2.hpp; sourceTree = "<group>"; };
+		494B5D7F1CD8DAD500503461 /* Precode_Matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Precode_Matrix.hpp; sourceTree = "<group>"; };
+		494B5D801CD8DAD500503461 /* Rand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rand.hpp; sourceTree = "<group>"; };
+		494B5D811CD8DAD500503461 /* RaptorQ.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RaptorQ.hpp; sourceTree = "<group>"; };
+		494B5D821CD8DAD500503461 /* table2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = table2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492F09461CD4C8B400258959 /* libRaptorQ.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +87,34 @@
 		492F092D1CD4C57F00258959 /* libraptorQ_tester */ = {
 			isa = PBXGroup;
 			children = (
+				494B5D731CD8DAD500503461 /* libraptorQ_headers */,
 				492F092E1CD4C57F00258959 /* main.cpp */,
+				492DEF401CD5D9BD0014BB30 /* main.hpp */,
+				492F09451CD4C8B400258959 /* libRaptorQ.dylib */,
 			);
 			path = libraptorQ_tester;
+			sourceTree = "<group>";
+		};
+		494B5D731CD8DAD500503461 /* libraptorQ_headers */ = {
+			isa = PBXGroup;
+			children = (
+				494B5D741CD8DAD500503461 /* common.hpp */,
+				494B5D751CD8DAD500503461 /* cRaptorQ.h */,
+				494B5D761CD8DAD500503461 /* De_Interleaver.hpp */,
+				494B5D771CD8DAD500503461 /* Decoder.hpp */,
+				494B5D781CD8DAD500503461 /* degree.hpp */,
+				494B5D791CD8DAD500503461 /* Encoder.hpp */,
+				494B5D7A1CD8DAD500503461 /* Graph.hpp */,
+				494B5D7B1CD8DAD500503461 /* Interleaver.hpp */,
+				494B5D7C1CD8DAD500503461 /* multiplication.hpp */,
+				494B5D7D1CD8DAD500503461 /* Parameters.hpp */,
+				494B5D7E1CD8DAD500503461 /* Phase2.hpp */,
+				494B5D7F1CD8DAD500503461 /* Precode_Matrix.hpp */,
+				494B5D801CD8DAD500503461 /* Rand.hpp */,
+				494B5D811CD8DAD500503461 /* RaptorQ.hpp */,
+				494B5D821CD8DAD500503461 /* table2.hpp */,
+			);
+			path = libraptorQ_headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +127,7 @@
 				492F09271CD4C57F00258959 /* Sources */,
 				492F09281CD4C57F00258959 /* Frameworks */,
 				492F09291CD4C57F00258959 /* CopyFiles */,
+				492F094B1CD4CA0100258959 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -209,6 +265,17 @@
 		492F09331CD4C57F00258959 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libraptorQ_tester/\"";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libraptorQ_tester",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include/eigen3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +283,17 @@
 		492F09341CD4C57F00258959 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 3;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libraptorQ_tester/\"";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libraptorQ_tester",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-I/opt/local/include/eigen3",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +317,7 @@
 				492F09341CD4C57F00258959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
