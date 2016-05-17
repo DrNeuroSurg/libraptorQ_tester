@@ -19,6 +19,8 @@ static std::mutex global_mtx;
 #pragma clang diagnostic pop
 #endif	//using_clang
 
+using namespace std;
+
 typedef std::vector<uint32_t> VECTOR_uint32;
 typedef std::vector<uint16_t> VECTOR_uint16;
 typedef std::vector<uint8_t>  VECTOR_uint8;
@@ -32,7 +34,6 @@ typedef struct timerData {
 typedef struct resultDataFragment {
     uint32_t  subsymbol_count;
     uint32_t  symbol_size;
-    uint32_t  repair_package_count;
     float     dropped_data_percentage;
     timerData times;
 } resultDataFragment;
@@ -60,5 +61,13 @@ public:
 private:
     std::chrono::time_point<std::chrono::high_resolution_clock> t0, t1;
 };
+
+timerData make_test (
+                     std::mt19937_64 &rnd,
+                     uint32_t        test_data_size,
+                     uint32_t        subsymbol_count,
+                     uint32_t        symbol_size,
+                     float           dropped_data_percentage
+                     );
 
 #endif /* main_h */
